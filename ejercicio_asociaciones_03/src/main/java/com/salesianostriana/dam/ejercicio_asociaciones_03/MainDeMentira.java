@@ -98,7 +98,7 @@ public class MainDeMentira {
         Bicicleta bici3 = Bicicleta.builder()
                 .marca("Specialized")
                 .modelo("Rockhopper")
-                .estado("Reservada")
+                .estado("Disponible")
                 .build();
 
         sur.addBicicleta(bici1);
@@ -137,6 +137,8 @@ public class MainDeMentira {
 
         System.out.println(u1);
         System.out.println(u2);
+
+        System.out.println(biciRepo.findByEstado("Disponible"));
 
     }
 }
